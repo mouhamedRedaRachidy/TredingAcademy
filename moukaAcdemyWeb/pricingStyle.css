@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Poppins", sans-serif;
+}
+.sec1{
+    padding:55px  ;
+    background-color: black;
+    height: fit-content;
+    color: white;
+    width: 100%;
+}
+.title{
+    width: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    text-align: center;
+    
+}
+.t_data{
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    width: 300px;
+}
+.title h1{
+    font-size: 40px;
+    color: gold;
+}
+
+/*card */
+.container {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  
+  .card_box {
+    width: 450px;
+    height: 650px;
+    border-radius: 20px;
+    background: linear-gradient(170deg, rgba(58, 56, 56, 0.623) 0%, rgb(31, 31, 31) 100%);
+    position: relative;
+    box-shadow: 0 25px 50px rgba(0,0,0,0.55);
+    cursor: pointer;
+    transition: all .3s;
+  }
+  
+  .card_box:hover {
+    transform: scale(1.01);
+  }
+  
+  .card_box span {
+    position: absolute;
+    overflow: hidden;
+    width: 150px;
+    height: 150px;
+    top: -10px;
+    left: -10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .card_box span::before {
+    content: 'Premium';
+    position: absolute;
+    width: 150%;
+    height: 40px;
+    background-image: linear-gradient(45deg, gold 0%, #ef981e  51%, gold  100%);
+    transform: rotate(-45deg) translateY(-20px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.23);
+  }
+  
+  .card_box span::after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    bottom: 0;
+    left: 0;
+    height: 10px;
+    z-index: -1;
+    box-shadow: 140px -140px #cc3f47;
+    background-image: linear-gradient(45deg, #FF512F 0%, #F09819  51%, #FF512F  100%);
+  }
+  .t_card{
+    padding-top:70px ;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .t_card h3{
+    font-size: 25px;
+    color: rgb(255, 228, 76);
+  }
+  .price{
+    margin-top: 50px;
+    width: 180px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 180px;
+    border: solid gold 5px;
+    border-radius:50% ;
+  }
+  .price h5{
+    font-size:29px ;
+  }
+  small{
+    font-size: 18px;
+    
+  }
+.data_card{
+  line-height: 32px;
+  text-align: center;
+}
+.btn_login{
+  padding: 10px 0;
+  text-align: center;
+}
+.btn_log{
+  width: 150px;
+  height: 50px;
+  border:none ;
+  text-align: center;
+  background-color: gold;
+  border-radius: 9px;
+  color: black;
+  font-weight: 700;
+  font-size: 18px;
+  transition: .3s all;
+  
+}
+.btn_log:hover{
+  border: solid 2px gold;
+  background-color: transparent;
+  color: white;
+}
+
+@media screen and (min-width: 767px) and (max-width: 900px){
+    .t_data{
+      width:500px;
+    }
+}

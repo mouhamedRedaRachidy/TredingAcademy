@@ -1,0 +1,626 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/*GLOBAL STYLe*/
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Spartan', sans-serif;
+}
+body{
+    overflow-x: hidden;
+    overflow-y: inherit;
+}
+h2 {
+    font-size: 1.875rem;
+    line-height: 3.375rem;
+    color: #222;
+  }
+html {
+    scroll-behavior: smooth;
+  }
+/*sec*/
+.sec1{
+    background-color: rgb(0, 0, 0);
+    height: 100vh;
+    padding: 0 90px;
+}
+/*Header*/
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo h2{
+    margin-left: 10px;
+    font-weight: 800;
+    color: white;
+}
+
+.logo h2 span.gold{
+    color: gold;
+    font-weight: 500;
+}
+.header{
+    padding: 20px 45px;
+    display: flex;
+    
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    right: 0;
+    background-color: rgb(0, 0, 0);
+    z-index: 10;
+}
+.nav_bar{
+    width: 30%;
+}
+.nav_list{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.nav_list a{
+    color: white;
+    transition: .3s;
+    font-size: 20px;
+}
+.nav_list a:hover{
+    color: gold;
+}
+.nav_close,.toggel_button{
+    font-size: 1.7rem;
+    display: none;
+    transition: .3s all;
+    
+}
+.nav_close,.toggel_button:hover{
+    scale: 1.03;
+}
+/*hero*/
+.hero1{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.content{
+    color: white;
+    margin: 50px 0;
+    width: 90%;
+    display: flex;
+   
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.content_title{
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+.content_data{
+    width: 600px;
+}
+.gold_title{
+    color: gold;
+    font-size: 2.75rem;
+    font-weight: 800;
+}
+.gold_hachtag{
+    color: gold;
+}
+.content_para{
+    margin: 30px 0;
+    font-size: 20px;
+}
+.button_hero{
+    display: inline-block;
+    margin-top: 35px;
+    width: 350px;
+    color: rgb(255, 255, 255);
+    border: solid 2px gold;
+    border-radius: 20px;
+    padding: 13px 22px;
+    text-align: center;
+    font-size: 35px;
+    background-color: transparent;
+    transition: .4s;
+}
+
+.button_hero:hover{
+    box-shadow: 0 5px 10px rgba(255, 217, 0, 0.493);
+    color: gold;
+    
+}
+.image_hero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.image{
+    display: inline-block;
+    width: 450px;
+}
+.box_shadow{
+    width: 180px;
+    height: 24px;
+    background-color: rgba(255, 217, 0, 0.752);
+    margin-top: 30px;
+    border-radius: 550px;
+    filter: blur(7px);
+    
+}
+.button_responsive{
+    display: none;
+}
+
+@media screen and (max-width:807px) {
+
+    .nav_bar{
+        margin: 0;
+        display: block;
+        background-color: black;
+        position: fixed;
+        display: flex;
+        height: 100vh;
+        
+        top: -100%;
+        width: 100%;
+        left: 0;
+        transition: .4s;
+    }
+    .nav_list{
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .sec1{
+        width: 100%;
+        padding: 5px 15px;
+        height: 100vh;
+    }
+
+    .logo img{
+        width: 40px;
+    }
+    .logo h2{
+        font-size: 20px;
+    }
+    a.nav_link{
+        margin-top: 60px;
+        font-size: 30px;
+        color: gold;
+        font-weight: 500;
+
+    }
+
+    .nav_close{
+        display: block;
+        position: absolute;
+        top: 1.75rem;
+        right: 2rem;
+        font-size: 40px;
+    }
+    .toggel_button{
+        display: block;
+        font-size: 2rem;
+        
+    }
+    .content{
+        margin: 20px;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        margin-left: 20px;
+        
+    }
+    .content{
+        width: fit-content;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .content_data{
+        text-align: center;
+        width: 300px;
+        
+    }
+    .content_para{
+        display: none;
+        font-size: 15px;
+    }
+    .button_hero{
+        display: none;
+    }
+    .image{
+        margin-top: 20px;
+        width: 280px;
+    }
+    .gold_hachtag{
+        display: none;
+    }
+    .show_nav{
+        
+        top: 0;
+    }
+    #nav-link:hover{
+        opacity: 0.5;
+        
+    }
+
+
+}
+
+
+@media screen and (min-width: 807px) and (max-width: 950px) {
+
+    .button_hero{
+        display: none;
+    }
+
+    .hero1{
+        margin-top: -20px;
+        width: 100%;
+        background: rgb(8, 8, 8);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    header{
+        
+        justify-content: center;
+    }
+
+    .button_responsive{
+        display: block;
+        margin-top: 35px;
+        width: 350px;
+        color: rgb(255, 255, 255);
+        border: solid 2px gold;
+        border-radius: 20px;
+        padding: 13px 22px;
+        text-align: center;
+        font-size: 35px;
+        background-color: transparent;
+        transition: .4s;
+    }
+    .button_responsive:hover{
+        box-shadow: 0 5px 10px rgba(255, 217, 0, 0.493);
+        color: gold;
+    }
+    .logo.imag{
+        width: 50px;
+    }
+    .content{
+        
+        display: flex;
+        flex-direction: column;
+    }
+    .content_data{
+        text-align: center;
+    }
+     .nav_bar{
+        margin: 0;
+        display: block;
+        background-color: black;
+        position: fixed;
+        display: flex;
+        height: 100vh;
+        top: -100%;
+        width: 100%;
+        left: 0;
+        transition: .4s;
+    }
+    .nav_list{
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .sec1{
+        
+        height: 100vh;
+        padding: 0px 35px;
+    }
+
+    .logo img{
+        width: 40px;
+    }
+    .logo h2{
+        font-size: 20px;
+    }
+    a.nav_link{
+        margin-top: 60px;
+        font-size: 30px;
+        color: gold;
+        font-weight: 500;
+
+    }
+    .logo h2{
+        font-size: 40px;
+    }
+
+    .nav_close{
+        display: block;
+        position: absolute;
+        top: 1.75rem;
+        right: 2rem;
+        font-size: 40px;
+    }
+    .toggel_button{
+        display: block;
+        font-size: 3rem;
+        
+    }
+    .show_nav{
+        
+        top: 0;
+    }
+    .image{
+        width: 400px;
+    }
+
+
+    
+}
+
+
+/*section 2*/
+.sec2{
+    height: 70vh;
+    width: 100;
+   
+    background: rgb(0, 0, 0);
+}
+.hero2{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+}
+.content2{
+    
+    height: 100%;
+}
+.title-news h2{
+    color: white;
+    text-align: center;
+}
+.title-news{
+   display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.title-news h2{
+    font-size: 50px;
+    margin-bottom: -39px;
+}
+.title-news img{
+    width: 100px;
+
+}
+.cards{
+    padding-top: 50px;
+}
+.cards{
+    width: 80%;
+    height: 20%;
+    display: flex;
+   justify-content: space-between;
+   
+   gap: 25px;
+   flex-wrap: wrap;
+  
+}
+.data{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.card{
+    width: 300px;
+    height: 300px;
+    border: solid 2px gold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 9px;
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: cover;
+    transition: .4s ease-in-out;
+}
+.card h2{
+    color: gold;
+}
+.card:first-child{
+    background-image:url(img1.jpeg);
+}
+.card:nth-child(2){
+    background-image: url(img2.webp);
+}
+.card:nth-child(3){
+    background-image: url(img3.jpeg);
+}
+.card:hover{
+    scale: 1.05;
+}
+@media screen and (max-width: 767px) {
+    .sec2{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+
+@media screen and (min-width: 767px) and (max-width: 900px){
+    .sec2{
+        height: fit-content;
+    }
+    .content2{
+        height: 100%;
+        background: black;
+        padding: 20px 0;
+        width: 100%;
+
+    }
+    .cards{
+        width: 100%;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 18px;
+    }
+    .card{
+        width: 350px;
+        height: 350px;
+        font-size: var(--normal-font-size);
+    }
+    
+}
+
+/*sec3*/
+.sec3{
+    background-color: black;
+    height: 100vh;
+    width: 100%;
+
+}
+.hero3{
+    background-color: rgb(0, 0, 0);
+    padding: 50px 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.tikets{
+    width: 90%;
+    gap: 12px;
+   
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 70%;
+}
+.sec3 h1{
+    text-align: center;
+    padding-bottom: 20px;
+    font-size:50px ;
+    color: white;
+}
+.tiket{
+    padding: 38px 0;
+    margin-left: 10px;
+    width: 350px;
+    height:350px;
+    background-color: #222;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: solid 2px gold;
+    border-radius: 10px;
+}
+.profil{
+    width: 250px;
+    height: 250px;
+}
+.tiket img{
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    
+
+}
+.tiket_data{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.tiket_title{
+    margin: 15px 0;
+    font-size: 23px;
+    font-weight: 700;
+    color: white;
+}
+.job{
+    font-size: 25px;
+    color: gold;
+    font-weight: 600;
+    margin: 19px 0;
+}
+.tiket_link{
+    margin-top: 9px;
+    display: block;
+    font-size: 20px;
+    cursor: pointer;
+    color: gold;
+    transition: .3s all;
+}
+.tiket_link:hover{
+    color: beige;
+    scale: 1.09;
+}
+.tiket:hover{
+    scale: 1.03;
+}
+
+@media screen and (max-width:767px) {
+    .sec3{
+        
+        width: 100%;
+        height: 100%;
+    }
+
+    .tikets{
+        
+        gap: 18px;
+    }
+    .tiket{
+        padding: 30px;
+        width: 250px;
+        height: 250px;
+    }
+    .profil{
+        width:100px ;
+        height:100px;
+    }
+    .tiket img{
+        border-radius: 50%;
+        width: 100%;
+        height: 100%;
+        
+    
+    }
+}
+
+@media screen and (min-width: 767px) and (max-width: 900px){
+    
+        .sec3{
+            
+            width: 100%;
+            height: 100%;
+        }
+        
+        .tiket{
+            padding: 50px;
+            width: 350px;
+            height: 350px;
+        }
+        .hero3{
+            width: 100%;
+            background-color: rgb(0, 0, 0);
+            height: fit-content;
+    }
+}
+
+
